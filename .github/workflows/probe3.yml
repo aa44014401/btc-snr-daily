@@ -1,0 +1,16 @@
+name: probe3
+on: [push, workflow_dispatch]
+jobs:
+  probe3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: binance vision spot
+        run: |
+          echo "VISION_KLINES $(curl -s --max-time 15 'https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=4h&limit=2' | head -c 240)"
+          echo "VISION_TICKER $(curl -s --max-time 15 'https://data-api.binance.vision/api/v3/ticker/24hr?symbol=BTCUSDT' | head -c 240)"
+      - name: bitget perp extras
+        run: |
+          echo "BG_TICKER $(curl -s --max-time 15 'https://api.bitget.com/api/v2/mix/market/ticker?symbol=BTCUSDT&productType=USDT-FUTURES' | head -c 300)"
+          echo "BG_FUND $(curl -s --max-time 15 'https://api.bitget.com/api/v2/mix/market/current-fund-rate?symbol=BTCUSDT&productType=USDT-FUTURES' | head -c 200)"
+          echo "BG_OI $(curl -s --max-time 15 'https://api.bitget.com/api/v2/mix/market/open-interest?symbol=BTCUSDT&productType=USDT-FUTURES' | head -c 200)"
+          echo "BG_1D $(curl -s --max-time 15 'https://api.bitget.com/api/v2/mix/market/history-candles?symbol=BTCUSDT&granularity=1D&productType=USDT-FUTURES&limit=2' | head -c 240)"
