@@ -1,0 +1,107 @@
+{
+  "updated_tpe": "2026/10/14 10:43",
+  "symbol": "BTCUSDT.P",
+  "source": "Binance 現貨 K 線 + Bitget 永續指標",
+  "price": 83387.6,
+  "change_24h_pct": 0.65,
+  "rsi_4h": 51.1,
+  "atr_4h": 769,
+  "atr_1d": 2060,
+  "daily_trend": "多頭",
+  "resistance": [
+    {
+      "name": "R1",
+      "lo": 83796,
+      "hi": 83930,
+      "touches": 2,
+      "note": "2次觸碰・7日VAH 83,981",
+      "strength": "★☆☆"
+    },
+    {
+      "name": "R2",
+      "lo": 84168,
+      "hi": 84564,
+      "touches": 5,
+      "note": "5次觸碰・7日VAH 83,981・日樞紐R1",
+      "strength": "★★★"
+    },
+    {
+      "name": "R3",
+      "lo": 84942,
+      "hi": 85255,
+      "touches": 5,
+      "note": "5次觸碰",
+      "strength": "★★☆"
+    },
+    {
+      "name": "R4",
+      "lo": 86999,
+      "hi": 87396,
+      "touches": 7,
+      "note": "7次觸碰・30日高",
+      "strength": "★★★"
+    }
+  ],
+  "support": [
+    {
+      "name": "S1",
+      "lo": 82300,
+      "hi": 82900,
+      "touches": 7,
+      "note": "7次觸碰・7日POC 83,134・日樞紐P",
+      "strength": "★★★"
+    },
+    {
+      "name": "S2",
+      "lo": 81034,
+      "hi": 81479,
+      "touches": 3,
+      "note": "3次觸碰・日樞紐S1・前日低",
+      "strength": "★★☆"
+    },
+    {
+      "name": "S3",
+      "lo": 79890,
+      "hi": 80394,
+      "touches": 4,
+      "note": "4次觸碰",
+      "strength": "★★★"
+    },
+    {
+      "name": "S4",
+      "lo": 76000,
+      "hi": 76264,
+      "touches": 3,
+      "note": "3次觸碰",
+      "strength": "★★☆"
+    }
+  ],
+  "scenarios": [
+    {
+      "title": "情境 A｜區間震盪",
+      "probability_pct": 48,
+      "trigger": "觸發：4H 收盤維持在 82,300 – 83,930 之間",
+      "plan": [
+        "多方：82,977 進場 · SL 81,915 · TP1 83,796 · TP2 83,930　（R:R 1:0.8 · 1:0.9）",
+        "空方：83,719 進場 · SL 84,315 · TP1 82,900 · TP2 82,300　（R:R 1:1.4 · 1:2.4）"
+      ]
+    },
+    {
+      "title": "情境 B｜向上突破",
+      "probability_pct": 32,
+      "trigger": "觸發：4H 收盤站上 83,930（回踩不破再進場，避免假突破）",
+      "plan": [
+        "進場 84,123 · SL 84,085 · TP1 84,168 · TP2 84,564（R:R 1:1.2 · 1:9.9）"
+      ]
+    },
+    {
+      "title": "情境 C｜向下破位",
+      "probability_pct": 20,
+      "trigger": "觸發：4H 收盤跌破 82,300（反抽不過前低再進場）",
+      "plan": [
+        "進場 82,108 · SL 82,632 · TP1 81,479 · TP2 81,034（R:R 1:1.2 · 1:2.0）"
+      ]
+    }
+  ],
+  "disclaimer": "SNR 技術面統計結果，非投資建議。"
+}
