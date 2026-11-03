@@ -1,0 +1,99 @@
+{
+  "updated_tpe": "2026/11/03 12:35",
+  "symbol": "BTCUSDT.P",
+  "source": "Binance 現貨 K 線 + Bitget 永續指標",
+  "price": 77038.2,
+  "change_24h_pct": -1.9,
+  "rsi_4h": 38.0,
+  "atr_4h": 714,
+  "atr_1d": 1885,
+  "daily_trend": "多頭",
+  "resistance": [
+    {
+      "name": "R1",
+      "lo": 79221,
+      "hi": 79890,
+      "touches": 10,
+      "note": "10次觸碰・日樞紐R2",
+      "strength": "★★★"
+    },
+    {
+      "name": "R2",
+      "lo": 80684,
+      "hi": 81273,
+      "touches": 10,
+      "note": "10次觸碰・15日POC 80,683・4H EMA200",
+      "strength": "★★★"
+    },
+    {
+      "name": "R3",
+      "lo": 81823,
+      "hi": 82300,
+      "touches": 6,
+      "note": "6次觸碰",
+      "strength": "★★☆"
+    },
+    {
+      "name": "R4",
+      "lo": 82563,
+      "hi": 83158,
+      "touches": 7,
+      "note": "7次觸碰",
+      "strength": "★★☆"
+    }
+  ],
+  "support": [
+    {
+      "name": "S1",
+      "lo": 76826,
+      "hi": 76950,
+      "touches": 1,
+      "note": "1次觸碰・前日低",
+      "strength": "★☆☆"
+    },
+    {
+      "name": "S2",
+      "lo": 76047,
+      "hi": 76500,
+      "touches": 5,
+      "note": "5次觸碰・7日VAL 76,467・日樞紐S1",
+      "strength": "★★☆"
+    },
+    {
+      "name": "S3",
+      "lo": 74906,
+      "hi": 75030,
+      "touches": 1,
+      "note": "1次觸碰",
+      "strength": "★☆☆"
+    }
+  ],
+  "scenarios": [
+    {
+      "title": "情境 A｜區間震盪",
+      "probability_pct": 48,
+      "trigger": "觸發：4H 收盤維持在 76,826 – 79,890 之間",
+      "plan": [
+        "多方：77,022 進場 · SL 76,469 · TP1 79,221 · TP2 79,890　（R:R 1:4.0 · 1:5.2）",
+        "空方：79,149 進場 · SL 80,247 · TP1 76,950 · TP2 76,826　（R:R 1:2.0 · 1:2.1）"
+      ]
+    },
+    {
+      "title": "情境 B｜向上突破",
+      "probability_pct": 17,
+      "trigger": "觸發：4H 收盤站上 79,890（回踩不破再進場，避免假突破）",
+      "plan": [
+        "進場 80,068 · SL 79,555 · TP1 80,684 · TP2 81,273（R:R 1:1.2 · 1:2.3）"
+      ]
+    },
+    {
+      "title": "情境 C｜向下破位",
+      "probability_pct": 35,
+      "trigger": "觸發：4H 收盤跌破 76,826（反抽不過前低再進場）",
+      "plan": [
+        "進場 76,647 · SL 76,770 · TP1 76,500 · TP2 76,047（R:R 1:1.2 · 1:4.9）"
+      ]
+    }
+  ],
+  "disclaimer": "SNR 技術面統計結果，非投資建議。"
+}
