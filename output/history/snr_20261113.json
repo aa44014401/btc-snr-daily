@@ -1,0 +1,91 @@
+{
+  "updated_tpe": "2026/11/13 12:06",
+  "symbol": "BTCUSDT.P",
+  "source": "Binance 現貨 K 線 + Bitget 永續指標",
+  "price": 68872.0,
+  "change_24h_pct": -6.74,
+  "rsi_4h": 17.3,
+  "atr_4h": 1004,
+  "atr_1d": 2355,
+  "daily_trend": "多頭",
+  "resistance": [
+    {
+      "name": "R1",
+      "lo": 74811,
+      "hi": 75208,
+      "touches": 4,
+      "note": "4次觸碰・日樞紐R2",
+      "strength": "★★☆"
+    },
+    {
+      "name": "R2",
+      "lo": 75571,
+      "hi": 76500,
+      "touches": 10,
+      "note": "10次觸碰・7日POC 75,887・日樞紐R2",
+      "strength": "★★★"
+    },
+    {
+      "name": "R3",
+      "lo": 78878,
+      "hi": 79800,
+      "touches": 10,
+      "note": "10次觸碰",
+      "strength": "★★★"
+    },
+    {
+      "name": "R4",
+      "lo": 80394,
+      "hi": 81273,
+      "touches": 12,
+      "note": "12次觸碰",
+      "strength": "★★★"
+    }
+  ],
+  "support": [
+    {
+      "name": "S1",
+      "lo": 67115,
+      "hi": 67416,
+      "touches": 0,
+      "note": "ATR 投射（該方向無歷史點位）",
+      "strength": "★☆☆"
+    },
+    {
+      "name": "S2",
+      "lo": 65358,
+      "hi": 65659,
+      "touches": 0,
+      "note": "ATR 投射（該方向無歷史點位）",
+      "strength": "★☆☆"
+    }
+  ],
+  "scenarios": [
+    {
+      "title": "情境 A｜區間震盪",
+      "probability_pct": 48,
+      "trigger": "觸發：4H 收盤維持在 67,115 – 75,208 之間",
+      "plan": [
+        "多方：67,516 進場 · SL 66,613 · TP1 74,811 · TP2 75,208　（R:R 1:8.1 · 1:8.5）",
+        "空方：74,711 進場 · SL 75,710 · TP1 67,416 · TP2 67,115　（R:R 1:7.3 · 1:7.6）"
+      ]
+    },
+    {
+      "title": "情境 B｜向上突破",
+      "probability_pct": 17,
+      "trigger": "觸發：4H 收盤站上 75,208（回踩不破再進場，避免假突破）",
+      "plan": [
+        "進場 75,459 · SL 75,366 · TP1 75,571 · TP2 76,500（R:R 1:1.2 · 1:9.9）"
+      ]
+    },
+    {
+      "title": "情境 C｜向下破位",
+      "probability_pct": 35,
+      "trigger": "觸發：4H 收盤跌破 67,115（反抽不過前低再進場）",
+      "plan": [
+        "進場 66,864 · SL 67,918 · TP1 65,659 · TP2 65,358（R:R 1:1.1 · 1:1.4）"
+      ]
+    }
+  ],
+  "disclaimer": "SNR 技術面統計結果，非投資建議。"
+}
