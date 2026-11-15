@@ -1,0 +1,91 @@
+{
+  "updated_tpe": "2026/11/15 11:49",
+  "symbol": "BTCUSDT.P",
+  "source": "Binance 現貨 K 線 + Bitget 永續指標",
+  "price": 64963.8,
+  "change_24h_pct": -2.94,
+  "rsi_4h": 23.3,
+  "atr_4h": 1479,
+  "atr_1d": 2686,
+  "daily_trend": "多頭",
+  "resistance": [
+    {
+      "name": "R1",
+      "lo": 67439,
+      "hi": 67697,
+      "touches": 1,
+      "note": "1次觸碰・7日VAL 67,684・日樞紐R1",
+      "strength": "★☆☆"
+    },
+    {
+      "name": "R2",
+      "lo": 72598,
+      "hi": 72857,
+      "touches": 1,
+      "note": "1次觸碰",
+      "strength": "★☆☆"
+    },
+    {
+      "name": "R3",
+      "lo": 74811,
+      "hi": 76264,
+      "touches": 10,
+      "note": "10次觸碰・7日VAH 76,200",
+      "strength": "★★★"
+    },
+    {
+      "name": "R4",
+      "lo": 76326,
+      "hi": 76888,
+      "touches": 5,
+      "note": "5次觸碰・7日VAH 76,200",
+      "strength": "★★☆"
+    }
+  ],
+  "support": [
+    {
+      "name": "S1",
+      "lo": 62376,
+      "hi": 62820,
+      "touches": 0,
+      "note": "ATR 投射（該方向無歷史點位）",
+      "strength": "★☆☆"
+    },
+    {
+      "name": "S2",
+      "lo": 59788,
+      "hi": 60232,
+      "touches": 0,
+      "note": "ATR 投射（該方向無歷史點位）",
+      "strength": "★☆☆"
+    }
+  ],
+  "scenarios": [
+    {
+      "title": "情境 A｜區間震盪",
+      "probability_pct": 48,
+      "trigger": "觸發：4H 收盤維持在 62,376 – 67,697 之間",
+      "plan": [
+        "多方：62,968 進場 · SL 61,637 · TP1 67,439 · TP2 67,697　（R:R 1:3.4 · 1:3.6）",
+        "空方：67,291 進場 · SL 68,437 · TP1 62,820 · TP2 62,376　（R:R 1:3.9 · 1:4.3）"
+      ]
+    },
+    {
+      "title": "情境 B｜向上突破",
+      "probability_pct": 17,
+      "trigger": "觸發：4H 收盤站上 67,697（回踩不破再進場，避免假突破）",
+      "plan": [
+        "進場 68,067 · SL 66,699 · TP1 72,598 · TP2 72,857（R:R 1:3.3 · 1:3.5）"
+      ]
+    },
+    {
+      "title": "情境 C｜向下破位",
+      "probability_pct": 35,
+      "trigger": "觸發：4H 收盤跌破 62,376（反抽不過前低再進場）",
+      "plan": [
+        "進場 62,006 · SL 63,559 · TP1 60,232 · TP2 59,788（R:R 1:1.1 · 1:1.4）"
+      ]
+    }
+  ],
+  "disclaimer": "SNR 技術面統計結果，非投資建議。"
+}
